@@ -66,7 +66,7 @@
                                 @enderror
 
                                 @if ($user->photo)
-                                    <img src="{{ asset('uploads/'. $user->photo) }}" alt="User Photo"
+                                    <img src="{{ asset('storage/uploads/'. $user->photo) }}" alt="User Photo"
                                         style="max-width: 200px; margin-top: 10px;">
                                 @else
                                     <p>No photo available</p>

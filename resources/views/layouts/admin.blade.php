@@ -31,10 +31,10 @@
 
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url('/home') }}">
-            <div class="sidebar-brand-icon rotate-n-15">
+            {{-- <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
-            </div>
-            <div class="sidebar-brand-text mx-3">CMS <sup>Clinic</sup></div>
+            </div> --}}
+            <div class="sidebar-brand-text mx-3">Clinic <sup>Ku</sup></div>
         </a>
 
         <!-- Divider -->

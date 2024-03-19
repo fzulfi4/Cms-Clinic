@@ -21,13 +21,23 @@ class DoctorController extends Controller
     public function index(Request $request)
     {
         //
-        $doctors = Doctor::select('doctors.id', 'doctors.photo', 'doctors.name', 'doctors.status', 'specialists.description',)
-    ->when($request->input('name'), function ($query, $name) {
-        return $query->where('doctors.name', 'like', '%' . $name . '%');
-    })
-    ->join('specialists', 'doctors.sid', '=', 'specialists.id')
-    ->orderBy('doctors.id', 'desc')
-    ->paginate(10);
+        $doctors = Doctor::select('id', 'photo', 'name', 'status', 'sid')
+            ->when($request->input('name'), function ($query, $name) {
+                return $query->where('name', 'like', '%' . $name . '%');
+            })
+            ->orderBy('id')
+            ->paginate(10);
+        $doctorIds = $doctors->pluck('sid')->toArray();
+
+        foreach ($doctors as $doctor) {
+            $specialist = Specialist::select('description')->where('status', true)->find($doctor->sid);
+            if (!empty($specialist)) {
+                $doctor->description = $specialist->description;
+            } else {
+                $doctor->description = '';
+            }
+        }
+
 
         return view('masterData.doctors.index', compact('doctors'));
     }
@@ -38,7 +48,7 @@ class DoctorController extends Controller
     public function create()
     {
         //
-        
+
         $specialists = Specialist::get();
         return view('masterData.doctors.create', compact('specialists'));
     }
@@ -64,7 +74,7 @@ class DoctorController extends Controller
             $file->storeAs('uploads', $filename, 'public');
             $data['photo'] = $filename;
         }
-        $data['pid']=rand(0, 100);
+        $data['pid'] = rand(0, 100);
         // dd($data);
         Doctor::create($data);
         return redirect()->route('doctors')->with('success', 'User successfully created');
@@ -85,8 +95,8 @@ class DoctorController extends Controller
     {
         //
         $user = Doctor::findOrFail($id);
-        $specialists = Specialist::get();
-        return view('masterData.doctors.edit', compact('user','specialists'));
+        $specialists = Specialist::where('status', true)->get();
+        return view('masterData.doctors.edit', compact('user', 'specialists'));
     }
 
     /**
@@ -111,6 +121,14 @@ class DoctorController extends Controller
 
 
         if ($request->file('photo')) {
+            if ($user->photo != ''  && $user->photo != null) {
+                $file = $user->photo;
+                $file_old = public_path('storage/uploads/' . $file);
+                if (file_exists($file_old)) {
+                    unlink($file_old);
+                }
+            }
+
             $file = $request->file('photo');
             $filename = $file->getClientOriginalName();
             $file->storeAs('uploads', $filename, 'public');

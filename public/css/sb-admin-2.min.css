@@ -10,7 +10,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-    --blue: #87d9f1;
+    --blue: #05a7aa;
     --indigo: #6610f2;
     --purple: #6f42c1;
     --pink: #e83e8c;
@@ -23,7 +23,7 @@
     --white: #fff;
     --gray: #718096;
     --gray-dark: #2d3748;
-    --primary: #87d9f1;
+    --primary: #05a7aa;
     --secondary: #718096;
     --success: #1cc88a;
     --info: #36b9cc;
@@ -172,13 +172,13 @@ sup {
 }
 
 a {
-    color: #87d9f1;
+    color: #05a7aa;
     text-decoration: none;
     background-color: transparent
 }
 
 a:hover {
-    color: #224abe;
+    color: #05a7aa;
     text-decoration: underline
 }
 
@@ -2705,8 +2705,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #87d9f1;
-    border-color: #87d9f1
+    background-color: #05a7aa;
+    border-color: #05a7aa
 }
 
 .btn-primary:hover {
@@ -2726,8 +2726,8 @@ fieldset:disabled a.btn {
 .btn-primary.disabled,
 .btn-primary:disabled {
     color: #fff;
-    background-color: #87d9f1;
-    border-color: #87d9f1
+    background-color: #05a7aa;
+    border-color: #05a7aa
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -3032,14 +3032,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-    color: #87d9f1;
-    border-color: #87d9f1
+    color: #05a7aa;
+    border-color: #05a7aa
 }
 
 .btn-outline-primary:hover {
     color: #fff;
-    background-color: #87d9f1;
-    border-color: #87d9f1
+    background-color: #05a7aa;
+    border-color: #05a7aa
 }
 
 .btn-outline-primary.focus,
@@ -3049,7 +3049,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-primary.disabled,
 .btn-outline-primary:disabled {
-    color: #87d9f1;
+    color: #05a7aa;
     background-color: transparent
 }
 
@@ -3057,8 +3057,8 @@ fieldset:disabled a.btn {
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .show>.btn-outline-primary.dropdown-toggle {
     color: #fff;
-    background-color: #87d9f1;
-    border-color: #87d9f1
+    background-color: #05a7aa;
+    border-color: #05a7aa
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
@@ -3321,12 +3321,12 @@ fieldset:disabled a.btn {
 
 .btn-link {
     font-weight: 400;
-    color: #87d9f1;
+    color: #05a7aa;
     text-decoration: none
 }
 
 .btn-link:hover {
-    color: #224abe;
+    color: #05a7aa;
     text-decoration: underline
 }
 
@@ -3644,7 +3644,7 @@ input[type=submit].btn-block {
 .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #87d9f1
+    background-color: #05a7aa
 }
 
 .dropdown-item.disabled,
@@ -4020,8 +4020,8 @@ input[type=submit].btn-block {
 
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
-    border-color: #87d9f1;
-    background-color: #87d9f1
+    border-color: #05a7aa;
+    background-color: #05a7aa
 }
 
 .custom-control-input:focus~.custom-control-label::before {
@@ -4087,8 +4087,8 @@ input[type=submit].btn-block {
 }
 
 .custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before {
-    border-color: #87d9f1;
-    background-color: #87d9f1
+    border-color: #05a7aa;
+    background-color: #05a7aa
 }
 
 .custom-checkbox .custom-control-input:indeterminate~.custom-control-label::after {
@@ -4321,7 +4321,7 @@ input[type=submit].btn-block {
     width: 1rem;
     height: 1rem;
     margin-top: -.25rem;
-    background-color: #87d9f1;
+    background-color: #05a7aa;
     border: 0;
     border-radius: 1rem;
     -webkit-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -4354,7 +4354,7 @@ input[type=submit].btn-block {
 .custom-range::-moz-range-thumb {
     width: 1rem;
     height: 1rem;
-    background-color: #87d9f1;
+    background-color: #05a7aa;
     border: 0;
     border-radius: 1rem;
     -moz-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -4390,7 +4390,7 @@ input[type=submit].btn-block {
     margin-top: 0;
     margin-right: .2rem;
     margin-left: .2rem;
-    background-color: #87d9f1;
+    background-color: #05a7aa;
     border: 0;
     border-radius: 1rem;
     -ms-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -4535,7 +4535,7 @@ input[type=submit].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #87d9f1
+    background-color: #05a7aa
 }
 
 .nav-fill .nav-item,
@@ -5314,14 +5314,14 @@ input[type=submit].btn-block {
     padding: .5rem .75rem;
     margin-left: -1px;
     line-height: 1.25;
-    color: #87d9f1;
+    color: #05a7aa;
     background-color: #fff;
     border: 1px solid #e2e8f0
 }
 
 .page-link:hover {
     z-index: 2;
-    color: #224abe;
+    color: #05a7aa;
     text-decoration: none;
     background-color: #edf2f7;
     border-color: #e2e8f0
@@ -5347,8 +5347,8 @@ input[type=submit].btn-block {
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: #87d9f1;
-    border-color: #87d9f1
+    background-color: #05a7aa;
+    border-color: #05a7aa
 }
 
 .page-item.disabled .page-link {
@@ -5432,7 +5432,7 @@ a.badge:hover {
 
 .badge-primary {
     color: #fff;
-    background-color: #87d9f1
+    background-color: #05a7aa
 }
 
 a.badge-primary:focus,
@@ -5764,7 +5764,7 @@ a.badge-dark:focus {
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: #87d9f1;
+    background-color: #05a7aa;
     transition: width .6s ease
 }
 
@@ -5855,8 +5855,8 @@ a.badge-dark:focus {
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #87d9f1;
-    border-color: #87d9f1
+    background-color: #05a7aa;
+    border-color: #05a7aa
 }
 
 .list-group-item+.list-group-item {
@@ -7058,7 +7058,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-    background-color: #87d9f1 !important
+    background-color: #05a7aa !important
 }
 
 a.bg-primary:focus,
@@ -7194,7 +7194,7 @@ button.bg-dark:hover {
 }
 
 .border-primary {
-    border-color: #87d9f1 !important
+    border-color: #05a7aa !important
 }
 
 .border-secondary {
@@ -10794,12 +10794,12 @@ button.bg-dark:hover {
 }
 
 .text-primary {
-    color: #87d9f1 !important
+    color: #05a7aa !important
 }
 
 a.text-primary:focus,
 a.text-primary:hover {
-    color: #224abe !important
+    color: #05a7aa !important
 }
 
 .text-secondary {
@@ -11165,8 +11165,8 @@ a:focus {
 }
 
 .bg-gradient-primary {
-    background-color: #87d9f1;
-    background-image: linear-gradient(180deg, #87d9f1 10%, #224abe 100%);
+    background-color: #05a7aa;
+    background-image: linear-gradient(180deg, #05a7aa 10%, #05a7aa 100%);
     background-size: cover
 }
 
@@ -11315,7 +11315,7 @@ a:focus {
     border-radius: 5px;
     height: 6px;
     width: 25px;
-    background-color: #87d9f1;
+    background-color: #05a7aa;
     display: inline-block;
     float: left;
     margin-top: 6px;
@@ -11323,11 +11323,11 @@ a:focus {
 }
 
 .border-left-primary {
-    border-left: .25rem solid #87d9f1 !important
+    border-left: .25rem solid #05a7aa !important
 }
 
 .border-bottom-primary {
-    border-bottom: .25rem solid #87d9f1 !important
+    border-bottom: .25rem solid #05a7aa !important
 }
 
 .border-left-secondary {
@@ -11399,7 +11399,7 @@ a:focus {
 }
 
 .avatar {
-    background: #87d9f1;
+    background: #05a7aa;
     border-radius: 50%;
     color: #fff;
     display: inline-block;
@@ -11612,8 +11612,8 @@ a:focus {
 }
 
 .topbar .dropdown-list .dropdown-header {
-    background-color: #87d9f1;
-    border: 1px solid #87d9f1;
+    background-color: #05a7aa;
+    border: 1px solid #05a7aa;
     padding-top: .75rem;
     padding-bottom: .75rem;
     color: #fff
@@ -11799,7 +11799,7 @@ a:focus {
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item.active,
 .sidebar .nav-item .collapsing .collapse-inner .collapse-item.active {
-    color: #87d9f1;
+    color: #05a7aa;
     font-weight: 700
 }
 
@@ -12568,7 +12568,7 @@ a:focus {
 }
 
 .form-control:focus {
-    border-color: #87d9f1;
+    border-color: #05a7aa;
     color: #4a5568;
     box-shadow: none
 }
@@ -12976,7 +12976,7 @@ form.user .btn-user {
     content: attr(data-text);
     position: absolute;
     left: -2px;
-    text-shadow: 1px 0 #87d9f1;
+    text-shadow: 1px 0 #05a7aa;
     top: 0;
     color: #2d3748;
     background: #f7fafc;

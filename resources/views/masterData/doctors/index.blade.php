@@ -65,6 +65,7 @@
                                         <tbody>
                                             @php $number = 0; @endphp
                                             @foreach ($doctors as $user)
+                     
                                                 @php $number++; @endphp
                                                 <tr>
                                                     <td style="width: 25px;">{{ $number }}</td>
@@ -104,7 +105,7 @@
                                                                 @method('DELETE')
                                                                 @csrf
                                                                 <button
-                                                                    class="btn btn-sm btn-danger btn-icon confirm-delete">
+                                                                    class="btn btn-sm btn-danger btn-icon confirm-delete"  onclick="return confirm('Apakah anda yakin?')">
                                                                     <i class="fas fa-trash"></i>
                                                                 </button>
                                                             </form>
